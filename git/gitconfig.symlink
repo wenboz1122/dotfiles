@@ -5,10 +5,17 @@
         protocol = https
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
+        br = branch
+        p = push
+        st = status -sb
+        ll = log --graph --oneline --all
+        last = log -1 HEAD --stat
+        cm = commit -m
+        rv = remote -v
+        d = diff
+        dv = difftool -t vimdiff -y
+        gl = config --global -l
+        se = !git rev-list --all | xargs git grep -F
 [color]
         diff = auto
         status = auto
@@ -16,7 +23,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = subl -n -w
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -31,6 +38,8 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[pull]
+	rebase = true
 [credential]
 	helper = osxkeychain
 [diff "spaceman-diff"]
