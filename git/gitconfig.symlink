@@ -16,11 +16,6 @@
         dv = difftool -t vimdiff -y
         gl = config --global -l
         se = !git rev-list --all | xargs git grep -F
-[color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
 [core]
         excludesfile = ~/.gitignore
         editor = subl -n -w
