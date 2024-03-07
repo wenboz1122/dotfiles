@@ -40,6 +40,8 @@ There's a few special files in the hierarchy.
 Run this:
 
 ```sh
+# Skip this if have already installed ohmyzsh under $HOME/.oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/wenboz1122/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
