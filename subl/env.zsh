@@ -1,1 +1,1 @@
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export PATH="/Applications/Sublime Text 3.app/Contents/SharedSupport/bin:$PATH"
