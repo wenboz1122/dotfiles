@@ -10,12 +10,7 @@ files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
-## what's inside
-
-A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser
-above and see what components may mesh up with you.
-[Fork it](https://github.com/holman/dotfiles/fork), remove what you don't
-use, and build on what you do use.
+Forked from [this repo](https://github.com/holman/dotfiles/fork). Take a look at the original doc if you are interested.
 
 ## components
 
@@ -67,3 +62,9 @@ this script in `bin/`.
   - go to Settings > Profile > Windows, Toss Style and Screen to control how to open new windows
 - [optional] Twist command line prompt
   - Open `~/.oh-my-zsh/themes/agnoster.zsh-theme` and find `prompt_context`. Change it to whatever you want. E.g. `prompt_segment black default "🚀"`
+
+## Troubleshooting
+
+ - Remove company specific packages (e.g. airbnb).
+ - The installer will stop whenever a script fails. Keep an eye on the logging at the end. If there is any error raised, some installation might have been skipped.
+ - Installation failure might due to wrong package downloaded. E.g. miniconda has different packages for x86, m1, etc.
